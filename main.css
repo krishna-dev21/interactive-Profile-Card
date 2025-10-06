@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Circle animations */
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: redgola 5s infinite;
+}
+
+@keyframes redgola {
+    50% {
+        left: 33%;
+        top: 4%;
+        scale: 1.11;
+    }
+}
+
+.circle2 {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: bluegola 5s infinite;
+}
+
+@keyframes bluegola {
+    50% {
+        scale: 1.11;
+        transform: translateX(-30px);
+    }
+}
+
+/* Hover Effects */
+.facebookhover:hover {
+    background-color: #098cf1;
+    transition: background-color 0.3s ease;
+}
+
+.facebookhover:hover i {
+    color:#ffffff;
+}
+
+
+.twitterhover:hover {
+    background-color: #74C0FC;
+    transition: background-color 0.3s ease;
+}
+
+.twitterhover:hover i {
+    color: #ffffff;
+    
+}
+
+.instagramhover:hover {
+    background-color: #fa0064;
+    transition: background-color 0.3s ease;
+}
+
+.instagramhover:hover i {
+    color: #ffffff;
+}
+
+.whatsapphover:hover {
+    background-color: #34ca16;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapphover:hover i {
+    color: #ffffff;
+}
+
+.telegramhover:hover {
+    background-color: #74C0FC;
+    transition: background-color 0.3s ease;
+}
+
+.telegramhover:hover i {
+    color: #ffffff;
+}
+
+.modal
+{
+  scale: 0;
+  transition: scale .5s ease;
+}
+.active
+{
+    scale: 1;
+    
+}
+
+.tint
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#ffffff30;
+    z-index: 10;
+    scale: 0;
+}
+
+/* .activeeee
+{
+    opacity: ;
+} */
+
+
+
